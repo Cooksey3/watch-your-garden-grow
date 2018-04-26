@@ -54,6 +54,7 @@ header{
 nav {
 	grid-column: 1/-1;
 	display: flex;
+	justify-content: space-evenly;
 	font-size: 24pt;
 	background-color: #325304;
 }
