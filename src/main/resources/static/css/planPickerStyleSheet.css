@@ -24,7 +24,7 @@ body {
 .container{
 	position: relative;
 	display: grid;
-	grid-template-rows: auto repeat(7, 1fr) 1fr;
+	grid-template-rows: auto auto repeat(6, 1fr) 1fr;
 	grid-template-columns: repeat(10, 1fr);
 	min-height: 100vh;
 }
@@ -59,16 +59,18 @@ nav {
 	background-color: #325304;
 }
 
-/*.nav-links{
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  min-width:800px;
-  display:flex;
-  justify-content:space-around;
-  color: white;
-  white-space: nowrap;
-}*/
+.nav-links{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    min-width: 60vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    font-size: 3.3vw;
+	/*white-space: nowrap;*/
+}
 
 
 
