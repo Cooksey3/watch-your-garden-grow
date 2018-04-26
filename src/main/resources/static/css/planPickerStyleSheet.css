@@ -72,12 +72,22 @@ nav {
 	/*white-space: nowrap;*/
 }
 
+.navigationLinks {
+  text-decoration: none;
+}
+
 .navigationLinks:hover{
   cursor: pointer;
   color: yellow;
+  text-decoration: none;
 }
 
-
+.zipCodeEntryAndSubmit{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	color: white;
+}
 
 
 
@@ -129,11 +139,6 @@ button:hover{
 	grid-template-columns: 1fr;
 }
 
-.enterZipCode{
-	display: flex;
-	justify-content: flex-end;
-	align-items: center;
-}
 
 .inputAndSubmitZipCode{
 	display: flex;
@@ -161,13 +166,6 @@ input::placeholder {
 	display: flex;
 	justify-content: flex-end;
 	margin-top: .2rem;
-}
-
-.zipCodeEntryAndSubmit{
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	color: white;
 }
 
 .zipAndPlanLink{

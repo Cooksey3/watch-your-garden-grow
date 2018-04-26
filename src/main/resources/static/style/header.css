@@ -14,23 +14,11 @@ a:visited{
   color: white;
 }
 
-.navigationLinks:hover{
-  cursor: pointer;
-  color: yellow;
-}
-
 @media screen and (max-width: 320px) {
   #project-name {
     font-size: 10px;
     display: flex;
   }
 }
-
-@media screen and (max-width: 600px) {
-  .nav-links {
-    font-size: 10px;
-  }
-}
-
 
 */
