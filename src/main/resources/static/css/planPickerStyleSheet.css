@@ -53,12 +53,21 @@ header{
 
 nav{
 	grid-column: 1/-1;
-	display:flex;
-	justify-content:center;
+	display: flex;
 	font-size: 24pt;
 	background-color: #325304;
 }
 
+/*.nav-links{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  min-width:800px;
+  display:flex;
+  justify-content:space-around;
+  color: white;
+  white-space: nowrap;
+}*/
 
 
 
