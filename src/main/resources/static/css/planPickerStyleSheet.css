@@ -127,25 +127,21 @@ input::placeholder {
 }
 
 #main {
-	grid-column: 1/7;
+	grid-column: 1/8;
 }
 
 #main ul {
-	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-	grid-gap: 5rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    justify-items: center;
 }
 
 #main ul li{
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	flex-wrap: wrap;
-	margin-top: 1rem;
-	margin-bottom: 1rem;
-	align-items: center;
-	max-width: 145px;
-	min-width: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 145px;
+    min-width: auto;
 }
 
 .plantListItem {
@@ -179,6 +175,14 @@ input::placeholder {
 	width: 8rem;
 	height: 8rem;
 	display: flex;
+}
+
+#plantImageContainer {
+	grid-gap: 16px;
+}
+
+#plantListSection {
+	padding: 1rem;
 }
 
 
@@ -221,18 +225,6 @@ footer {
 
 button:hover{
 	color: #69A10F;
-}
-
-.sectionForAllPlantsForHardinessZone{
-	display: none;
-	grid-template-rows: 4rem auto;
-	align-self: center;
-	align-items: center;
-
-}
-
-#plantImageContainer {
-	grid-gap: 16px;
 }
 
 .addToPlanButton, .removeFromPlanButton {

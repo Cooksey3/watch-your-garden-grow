@@ -11,8 +11,8 @@ const handleZipCodeinput = () => {
 		 alert("You must first enter a zip code to create a plan!")
 	}
 	else{
-	const sectionForAllPlantsForHardinessZone = document.querySelector('.sectionForAllPlantsForHardinessZone')
-	sectionForAllPlantsForHardinessZone.style.display = 'grid'
+	const plantListSection = document.querySelector('#plantListSection')
+	plantListSection.style.display = 'grid'
 	
 	xhr.open('GET', '/plants/zipcode/' + passedZipCode, true);
 	xhr.send();
