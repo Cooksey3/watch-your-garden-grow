@@ -11,8 +11,6 @@ const handleZipCodeinput = () => {
 		 alert("You must first enter a zip code to create a plan!")
 	}
 	else{
-	const instructions = document.querySelector('.hardinessZone')
-	instructions.style.display = 'none'
 	const sectionForAllPlantsForHardinessZone = document.querySelector('.sectionForAllPlantsForHardinessZone')
 	sectionForAllPlantsForHardinessZone.style.display = 'grid'
 	
