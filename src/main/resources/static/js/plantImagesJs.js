@@ -15,7 +15,7 @@ xhr.onreadystatechange = function() {
 		const res = JSON.parse(xhr.responseText);
 
 
-		let modal = document.querySelector('.modal');
+		// let modal = document.querySelector('.modal');
 
 		function appendPlantLiToPlantContainer(plantObject){
 			const plantLi = createElementNoText('li')
@@ -28,20 +28,20 @@ xhr.onreadystatechange = function() {
 			plantLink.innerText = plantObject.name;
 			plantLink.className = 'plantLinks'
 
-			plantLink.addEventListener('click', function(event){
+			// plantLink.addEventListener('click', function(event){
 				
-				event.preventDefault();
-				modal.style.display = "block";
-				const modalBoxContent = document.querySelector('.modal-content')
-				const plantDescription = document.querySelector('.plantDescription')
-				const plantName = document.querySelector('.plantName')
-				plantDescription.innerText = plantObject.description
-				const modalImageContainer = document.querySelector('.modalImage')
-				modalImageContainer.alt = plantObject.name
-				modalImageContainer.src = plantObject.image
-				plantName.innerText = plantObject.name
+			// 	event.preventDefault();
+			// 	modal.style.display = "block";
+			// 	const modalBoxContent = document.querySelector('.modal-content')
+			// 	const plantDescription = document.querySelector('.plantDescription')
+			// 	const plantName = document.querySelector('.plantName')
+			// 	plantDescription.innerText = plantObject.description
+			// 	const modalImageContainer = document.querySelector('.modalImage')
+			// 	modalImageContainer.alt = plantObject.name
+			// 	modalImageContainer.src = plantObject.image
+			// 	plantName.innerText = plantObject.name
 
-			});
+			// });
 
 			appendElement(plantLi, plantLink)
 			appendElement(plantLink, plantImage)
@@ -92,24 +92,24 @@ xhr.onreadystatechange = function() {
 				addToPlanButton.addEventListener('click', handlePlanRedirect);
 		}
 
-		const modalClose = document.querySelector('.close')
-		modalClose.addEventListener('click', function() {
-			modal.style.display = 'none';
-		});
+		// const modalClose = document.querySelector('.close')
+		// modalClose.addEventListener('click', function() {
+		// 	modal.style.display = 'none';
+		// });
 
-		document.addEventListener('keydown', event=>{
-			if (event.key === 'Escape' || event.keyCode === 27){
-				modal.style.display = 'none';
-			}
-		});
+		// document.addEventListener('keydown', event=>{
+		// 	if (event.key === 'Escape' || event.keyCode === 27){
+		// 		modal.style.display = 'none';
+		// 	}
+		// });
 
-		const ignore = document.querySelector('.modal-content')
-		modal.addEventListener('click', function(){
-			const target = event.target;
-			if(!(target===ignore || ignore.contains(target))){
-				modal.style.display = 'none';
-			}
-		});
+		// const ignore = document.querySelector('.modal-content')
+		// modal.addEventListener('click', function(){
+		// 	const target = event.target;
+		// 	if(!(target===ignore || ignore.contains(target))){
+		// 		modal.style.display = 'none';
+		// 	}
+		// });
 	
 		function createElement(elem, textValue){
 			const newElem = document.createElement(elem)
