@@ -15,7 +15,7 @@ xhr.onreadystatechange = function() {
 		const res = JSON.parse(xhr.responseText);
 
 
-		// let modal = document.querySelector('.modal');
+		let modal = document.querySelector('.modal');
 
 		function appendPlantLiToPlantContainer(plantObject){
 			const plantLi = createElementNoText('li')
@@ -28,20 +28,20 @@ xhr.onreadystatechange = function() {
 			plantLink.innerText = plantObject.name;
 			plantLink.className = 'plantLinks'
 
-			// plantLink.addEventListener('click', function(event){
+			plantLink.addEventListener('click', function(event){
 				
-			// 	event.preventDefault();
-			// 	modal.style.display = "block";
-			// 	const modalBoxContent = document.querySelector('.modal-content')
-			// 	const plantDescription = document.querySelector('.plantDescription')
-			// 	const plantName = document.querySelector('.plantName')
-			// 	plantDescription.innerText = plantObject.description
-			// 	const modalImageContainer = document.querySelector('.modalImage')
-			// 	modalImageContainer.alt = plantObject.name
-			// 	modalImageContainer.src = plantObject.image
-			// 	plantName.innerText = plantObject.name
+				event.preventDefault();
+				modal.style.display = "block";
+				const modalBoxContent = document.querySelector('.modal-content')
+				const plantDescription = document.querySelector('.plantDescription')
+				const plantName = document.querySelector('.plantName')
+				plantDescription.innerText = plantObject.description
+				const modalImageContainer = document.querySelector('.modalImage')
+				modalImageContainer.alt = plantObject.name
+				modalImageContainer.src = plantObject.image
+				plantName.innerText = plantObject.name
 
-			// });
+			});
 
 			appendElement(plantLi, plantLink)
 			appendElement(plantLink, plantImage)
