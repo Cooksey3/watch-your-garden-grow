@@ -74,6 +74,7 @@ nav {
 
 .navigationLinks {
   text-decoration: none;
+  color: white;
 }
 
 .navigationLinks:hover{
@@ -82,7 +83,7 @@ nav {
   text-decoration: none;
 }
 
-.navigationLinks:visited{
+.navigationLinks a:visited{
   color: white;
 }
 
