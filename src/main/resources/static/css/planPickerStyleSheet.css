@@ -201,12 +201,17 @@ input::placeholder {
 	color: red;
 }
 
-.addToPlanButton, .removeFromPlanButton {
+.addToPlanButton {
 	background-color: darkgreen;
 	cursor: pointer;
 	font-size: 1.1rem;
 }
 
+.removeFromPlanButton {
+	background-color: darkred;
+	cursor: pointer;
+	font-size: 1.1rem;
+}
 
 
 
