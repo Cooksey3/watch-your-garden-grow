@@ -47,12 +47,12 @@ xhr.onreadystatechange = function() {
 			appendElement(plantLink, plantImage)
 			const addToPlanButton = createElement("BUTTON")
 			addToPlanButton.className = "addToPlanButton"
-			addToPlanButton.innerText = "Add To Plan";
+			addToPlanButton.innerText = "Add";
 			appendElement(plantLi, addToPlanButton);
 
 			const removeFromPlanButton = createElement("BUTTON")
 			removeFromPlanButton.className = "toggleButtonClass removeFromPlanButton"
-			removeFromPlanButton.innerText = "Remove From Plan";
+			removeFromPlanButton.innerText = "Remove";
 			appendElement(plantLi, removeFromPlanButton)
 
 

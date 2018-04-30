@@ -185,6 +185,24 @@ input::placeholder {
 	padding: 1rem;
 }
 
+.addToPlanButton, .removeFromPlanButton {
+	height: 2rem;
+	width: 5.5rem;
+	border-radius: .3rem;
+	padding-top: .1rem;
+	padding-bottom: .1rem;
+	font-size: .75rem;
+	border: .09rem solid #2b2c31;
+}
+
+.addToPlanButton:hover{
+	color: #69A10F;
+}
+
+.removeFromPlanButton:hover{
+	color: red;
+}
+
 
 footer {
 	grid-column: 1/-1;
@@ -212,20 +230,7 @@ footer {
 /* I HAVE NOT EDITED ANYTHING BELOW THIS POINT!!!!!*/
 
 
-/*button{
-	height: 2rem;
-	width: 5.5rem;
-	border-radius: .3rem;
-	padding-top: .1rem;
-	padding-bottom: .1rem;
-	font-size: .75rem;
-	color: #0D0B09;
-	border: .09rem solid #2b2c31;
-}
-
-button:hover{
-	color: #69A10F;
-}
+/*
 
 .addToPlanButton, .removeFromPlanButton {
 	background-color: darkgreen;
