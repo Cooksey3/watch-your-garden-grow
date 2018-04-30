@@ -185,6 +185,43 @@ input::placeholder {
 	padding: 1rem;
 }
 
+.addToPlanButton, .removeFromPlanButton {
+	width: 5.5rem;
+	border-radius: .3rem;
+	padding-top: .1rem;
+	padding-bottom: .1rem;
+	border: .09rem solid #2b2c31;
+}
+
+.addToPlanButton:hover{
+	color: #69A10F;
+}
+
+.removeFromPlanButton:hover{
+	color: red;
+}
+
+.addToPlanButton {
+	background-color: darkgreen;
+	cursor: pointer;
+	font-size: 1.1rem;
+}
+
+.removeFromPlanButton {
+	background-color: darkred;
+	cursor: pointer;
+	font-size: 1.1rem;
+}
+
+.toggleButtonClass {
+	display: none;
+}
+
+.listOfEachPlantForHardinessZone li a {
+	margin-top: .25rem;	
+}
+
+
 
 footer {
 	grid-column: 1/-1;
@@ -212,50 +249,7 @@ footer {
 /* I HAVE NOT EDITED ANYTHING BELOW THIS POINT!!!!!*/
 
 
-/*button{
-	height: 2rem;
-	width: 5.5rem;
-	border-radius: .3rem;
-	padding-top: .1rem;
-	padding-bottom: .1rem;
-	font-size: .75rem;
-	color: #0D0B09;
-	border: .09rem solid #2b2c31;
-}
-
-button:hover{
-	color: #69A10F;
-}
-
-.addToPlanButton, .removeFromPlanButton {
-	background-color: darkgreen;
-	margin-top: .35rem;
-    margin-bottom: .35rem;
-	height: 2rem;
-	width: 6rem;
-	cursor: pointer;
-	border: black;
-	font-size: 1.1rem;
-}
-
-.removeFromPlanButton {
-	background-color: #940D29;
-	color: lightgrey;
-}
-
-.toggleButtonClass {
-	display: none;
-}
-
-.listOfEachPlantForHardinessZone li a {
-	margin-top: .25rem;	
-	grid-gap: 200px;
-}
-
-.listOfEachPlantForHardinessZone {
-	margin-right: 10rem;
-	margin-left: 10rem;
-}
+/*
 
 .modal {
 	max-width: 100vw;
