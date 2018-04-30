@@ -217,6 +217,10 @@ input::placeholder {
 	display: none;
 }
 
+.listOfEachPlantForHardinessZone li a {
+	margin-top: .25rem;	
+}
+
 
 
 footer {
@@ -246,16 +250,6 @@ footer {
 
 
 /*
-
-.listOfEachPlantForHardinessZone li a {
-	margin-top: .25rem;	
-	grid-gap: 200px;
-}
-
-.listOfEachPlantForHardinessZone {
-	margin-right: 10rem;
-	margin-left: 10rem;
-}
 
 .modal {
 	max-width: 100vw;
