@@ -186,12 +186,10 @@ input::placeholder {
 }
 
 .addToPlanButton, .removeFromPlanButton {
-	height: 2rem;
 	width: 5.5rem;
 	border-radius: .3rem;
 	padding-top: .1rem;
 	padding-bottom: .1rem;
-	font-size: .75rem;
 	border: .09rem solid #2b2c31;
 }
 
@@ -202,6 +200,14 @@ input::placeholder {
 .removeFromPlanButton:hover{
 	color: red;
 }
+
+.addToPlanButton, .removeFromPlanButton {
+	background-color: darkgreen;
+	cursor: pointer;
+	font-size: 1.1rem;
+}
+
+
 
 
 footer {
@@ -231,18 +237,6 @@ footer {
 
 
 /*
-
-.addToPlanButton, .removeFromPlanButton {
-	background-color: darkgreen;
-	margin-top: .35rem;
-    margin-bottom: .35rem;
-	height: 2rem;
-	width: 6rem;
-	cursor: pointer;
-	border: black;
-	font-size: 1.1rem;
-}
-
 .removeFromPlanButton {
 	background-color: #940D29;
 	color: lightgrey;
