@@ -272,7 +272,16 @@ input::placeholder {
     justify-content: space-around;
 }
 
+.close {
+	float:right;
+	cursor: pointer;
+	font-size: 2.5rem;
+	font-weight: bold;
+}
 
+.close:hover{
+	transform: scale(1.1);
+}
 
 footer {
 	grid-column: 1/-1;
@@ -301,20 +310,7 @@ footer {
 
 
 /*
-.close {
-	float:right;
-	cursor: pointer;
-	font-size: 2.5rem;
-	font-weight: bold;
-}
 
-.close:hover{
-	transform: scale(1.1);
-}
-
-.plantDescription{
-	align-self: center;
-}
 
 .about-us {
 	display: flex;
