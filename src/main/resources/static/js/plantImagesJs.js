@@ -34,7 +34,7 @@ xhr.onreadystatechange = function() {
 				modal.style.display = "block";
 				const modalBoxContent = document.querySelector('.modal-content')
 				const plantDescription = document.querySelector('.plantDescription')
-				const plantName = document.querySelector('.plantName')
+				const plantName = document.querySelector('.Name')
 				plantDescription.innerText = plantObject.description
 				const modalImageContainer = document.querySelector('.modalImage')
 				modalImageContainer.alt = plantObject.name
@@ -92,24 +92,24 @@ xhr.onreadystatechange = function() {
 				addToPlanButton.addEventListener('click', handlePlanRedirect);
 		}
 
-		// const modalClose = document.querySelector('.close')
-		// modalClose.addEventListener('click', function() {
-		// 	modal.style.display = 'none';
-		// });
+		const modalClose = document.querySelector('.close')
+		modalClose.addEventListener('click', function() {
+			modal.style.display = 'none';
+		});
 
-		// document.addEventListener('keydown', event=>{
-		// 	if (event.key === 'Escape' || event.keyCode === 27){
-		// 		modal.style.display = 'none';
-		// 	}
-		// });
+		document.addEventListener('keydown', event=>{
+			if (event.key === 'Escape' || event.keyCode === 27){
+				modal.style.display = 'none';
+			}
+		});
 
-		// const ignore = document.querySelector('.modal-content')
-		// modal.addEventListener('click', function(){
-		// 	const target = event.target;
-		// 	if(!(target===ignore || ignore.contains(target))){
-		// 		modal.style.display = 'none';
-		// 	}
-		// });
+		const ignore = document.querySelector('.modal-content')
+		modal.addEventListener('click', function(){
+			const target = event.target;
+			if(!(target===ignore || ignore.contains(target))){
+				modal.style.display = 'none';
+			}
+		});
 	
 		function createElement(elem, textValue){
 			const newElem = document.createElement(elem)
