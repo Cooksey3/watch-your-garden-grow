@@ -214,9 +214,9 @@ input::placeholder {
 	font-size: 1.1rem;
 }
 
-.toggleButtonClass {
+/*.toggleButtonClass {
 	display: none;
-}
+}*/
 
 .listOfEachPlantForHardinessZone li a {
 	margin-top: .25rem;	

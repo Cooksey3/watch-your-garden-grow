@@ -45,28 +45,49 @@ xhr.onreadystatechange = function() {
 
 			appendElement(plantLi, plantLink)
 			appendElement(plantLink, plantImage)
-			const addToPlanButton = createElement("BUTTON")
-			addToPlanButton.className = "addToPlanButton"
-			addToPlanButton.innerText = "Add";
-			appendElement(plantLi, addToPlanButton);
+			const button = createElement("BUTTON")
+			button.className = "addToPlanButton"
+			button.innerText = "Add";
+			appendElement(plantLi, button);
 
-			const removeFromPlanButton = createElement("BUTTON")
-			removeFromPlanButton.className = "toggleButtonClass removeFromPlanButton"
-			removeFromPlanButton.innerText = "Remove";
-			appendElement(plantLi, removeFromPlanButton)
+			// removeFromPlanButton.innerText = "Remove";
+			// appendElement(plantLi, removeFromPlanButton)
+			// addToPlanButton.className = "removeFromPlanButton"
 
+			button.addEventListener('click', event => {
+				if (button.className === "addToPlanButton") {
+					addPlantToPlan(plantObject.id)
+					button.innerText = "Remove";
+					toggleClass(button, "removeFromPlanButton")
+					button.classList.remove("addToPlanButton")
+				} else if (button.className === "removeFromPlanButton") {
+					removePlantFromPlan(plantObject.id)
+					button.innerText = "Add"
+					toggleClass(button, "addToPlanButton")
+					button.classList.remove("removeFromPlanButton")
+				}
 
-			addToPlanButton.addEventListener('click', event => {
-				addPlantToPlan(plantObject.id)
-				toggleClass(addToPlanButton, "toggleButtonClass")
-				toggleClass(removeFromPlanButton, "toggleButtonClass")
+					// return wasClicked = true;
+				// }
 			})
 
-			removeFromPlanButton.addEventListener('click', event => {
-				removePlantFromPlan(plantObject.id)
-				toggleClass(removeFromPlanButton, "toggleButtonClass")
-				toggleClass(addToPlanButton, "toggleButtonClass")
-			})
+			// button.addEventListener('click', event => {
+			// 					// if (wasClicked === false) {
+			// 	// toggleClass(addToPlanButton, "toggleButtonClass")
+			// 	})
+
+			
+
+			// removeFromPlanButton.addEventListener('click', event => {
+			// 	if (removeFromPlanButton.className === "removeFromPlanButton") {
+			// 	}
+			// })
+
+
+				// toggleClass(removeFromPlanButton, "toggleButtonClass")
+
+
+
 
 			return plantLi
 		}
