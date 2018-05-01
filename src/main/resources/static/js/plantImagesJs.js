@@ -1,6 +1,7 @@
 const plantImageContainer = document.getElementById('plantImageContainer');
 const redoPlanLink = document.querySelector('#redoPlanLink');
 const planRedirect = document.querySelector('#planReportLink');
+const gardenPreview = document.getElementById("gardenPreview")
 
 const xhr = new XMLHttpRequest();
 xhr.onreadystatechange = function() {
@@ -66,7 +67,6 @@ xhr.onreadystatechange = function() {
 
 			return plantLi
 		}
-
 		
 		const appendReportCardToPlantContainer = () => {
 			const plantLi = createElementNoText('li')

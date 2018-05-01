@@ -214,9 +214,17 @@ input::placeholder {
 	font-size: 1.1rem;
 }
 
-/*.toggleButtonClass {
-	display: none;
-}*/
+#preview {
+	grid-column: 8/-1;
+	
+}
+
+#previewItem {
+	color: red;
+	background-color: red;
+	width: 100px;
+	height: 100px;
+}
 
 .listOfEachPlantForHardinessZone li a {
 	margin-top: .25rem;	
