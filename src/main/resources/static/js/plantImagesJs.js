@@ -50,10 +50,6 @@ xhr.onreadystatechange = function() {
 			button.innerText = "Add";
 			appendElement(plantLi, button);
 
-			// removeFromPlanButton.innerText = "Remove";
-			// appendElement(plantLi, removeFromPlanButton)
-			// addToPlanButton.className = "removeFromPlanButton"
-
 			button.addEventListener('click', event => {
 				if (button.className === "addToPlanButton") {
 					addPlantToPlan(plantObject.id)
@@ -66,28 +62,7 @@ xhr.onreadystatechange = function() {
 					toggleClass(button, "addToPlanButton")
 					button.classList.remove("removeFromPlanButton")
 				}
-
-					// return wasClicked = true;
-				// }
 			})
-
-			// button.addEventListener('click', event => {
-			// 					// if (wasClicked === false) {
-			// 	// toggleClass(addToPlanButton, "toggleButtonClass")
-			// 	})
-
-			
-
-			// removeFromPlanButton.addEventListener('click', event => {
-			// 	if (removeFromPlanButton.className === "removeFromPlanButton") {
-			// 	}
-			// })
-
-
-				// toggleClass(removeFromPlanButton, "toggleButtonClass")
-
-
-
 
 			return plantLi
 		}
