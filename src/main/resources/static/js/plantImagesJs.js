@@ -36,12 +36,29 @@ xhr.onreadystatechange = function() {
 				const modalBoxContent = document.querySelector('.modal-content')
 				const plantDescription = document.querySelector('.plantDescription')
 				const plantName = document.querySelector('.Name')
+				const modalButton = document.getElementById('modalBoxAddToPlantButton')
+				// modalButton.innerText = "Add"
+				modalButton.className = 'addToPlanButton';
+
 				plantDescription.innerText = plantObject.description
 				const modalImageContainer = document.querySelector('.modalImage')
 				modalImageContainer.alt = plantObject.name
 				modalImageContainer.src = plantObject.image
 				plantName.innerText = plantObject.name
 
+				modalButton.addEventListener('click', event => {
+					if (modalButton.className === "addToPlanButton") {
+						addPlantToPlan(plantObject.id)
+						modalButton.innerText = "Remove";
+						toggleClass(modalButton, "removeFromPlanButton")
+						modalButton.classList.remove("addToPlanButton")
+					} else if (modalButton.className === "removeFromPlanButton") {
+						removePlantFromPlan(plantObject.id)
+						modalButton.innerText = "Add";
+						toggleClass(modalButton, "addToPlanButton")
+						modalButton.classList.remove("removeFromPlanButton")	
+					}
+				})
 			});
 
 			appendElement(plantLi, plantLink)
@@ -132,6 +149,7 @@ xhr.onreadystatechange = function() {
 
 	}
 }
+
 function createElementNoText(elem){
 			const newElem = document.createElement(elem)
 			return newElem

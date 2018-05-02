@@ -14,8 +14,8 @@ import javax.persistence.OneToMany;
 public class PlantPlan {
 
 	@Id
-	@GeneratedValue
-	private Long id;
+//	@GeneratedValue
+	private Long id = 1L;
 
 	@OneToMany(mappedBy = "plantPlan", cascade = CascadeType.ALL, fetch = FetchType.EAGER)
 	private Set<PlantPlanItem> plantPlanItems = new LinkedHashSet<>();

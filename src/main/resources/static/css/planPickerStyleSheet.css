@@ -214,9 +214,40 @@ input::placeholder {
 	font-size: 1.1rem;
 }
 
+/**/
+
+.modalButtonAdd, .modalButtonRemove {
+	width: 5.5rem;
+	border-radius: .3rem;
+	padding-top: .1rem;
+	padding-bottom: .1rem;
+	border: .09rem solid #2b2c31;
+}
+
+.modalButtonAdd:hover{
+	color: #69A10F;
+}
+
+.modalButtonRemove:hover{
+	color: red;
+}
+
+.modalButtonAdd {
+	background-color: darkgreen;
+	cursor: pointer;
+	font-size: 1.1rem;
+}
+
+.modalButtonRemove {
+	background-color: darkred;
+	cursor: pointer;
+	font-size: 1.1rem;
+}
+
+/**/
 #preview {
 	grid-column: 8/-1;
-	
+
 }
 
 #previewItem {
