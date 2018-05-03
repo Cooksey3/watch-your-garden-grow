@@ -4,15 +4,13 @@
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<link rel="stylesheet" type="text/css" href="/css/planPickerStyleSheet.css"></link>
-	<link rel="stylesheet" type="text/css" href="/style/header.css"></link>
 	<link rel="stylesheet" type="text/css" href="/css/reportStyleSheet.css"></link>
-	<link rel="stylesheet" type="text/css" href="/css/limitedNavBar.css"></link>
 
 	<link rel="icon" href="/images/styleImages/sunAndLeaf.png"></link>
-	<!--
+	
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet"></link>
 	<link href="https://fonts.googleapis.com/css?family=Cabin+Sketch" rel="stylesheet"></link>
-	-->
+	
 	<link href="https://fonts.googleapis.com/css?family=Lalezar|Rakkas" rel="stylesheet"></link>
 
 	<title>Garden Planner</title>
@@ -23,27 +21,20 @@
 	<div class="layer">
 		<div class="container">
 			<header>
-				<div class='header-title'>
-					<h1>
-						Watch Your Garden Grow
-					</h1>
-					<img src="/images/gardenLogo.jpg" />
+				<div class='header-content'>
+					<h1 id="project-name">Watch Your Garden Grow</h1>
+					<img id="logo" src="/images/gardenLogo.jpg"/>
 				</div>
-				<nav>
-					<ul class='nav-links'>
-						<li class='navigationLinks'>
-							<a class='navigationLinks' href="/about-us.html">About</a>
-						</li>
-						<li class='navigationLinks' id='planReportLink'>Current Plan</li>
-						<li class='navigationLinks' id='redoPlanLink'>Redo Plan</li>
-						<li>
-							<a class='navigationLinks' href="/planPicker.html">Home</a>
-						</li>
-					</ul>
-				</nav>
 			</header>
-
-			<section>
+ 			<nav>
+				<ul class='nav-links'>
+					<li><a class = 'navigationLinks' href = "http://localhost:8080/planPicker.html">Home</a></li>
+					<li><a class = 'navigationLinks' href= "http://localhost:8080/about-us.html">About</a></li>
+					<li><a class = 'navigationLinks' id = 'planReportLink'>Current Plan</a></li>
+					<li class = 'navigationLinks' id = 'redoPlanLink'>Reset Garden</li>
+				</ul>
+			</nav>
+			<section class ="report">
 				<div class="reportlist">
 					<h2 th:text="|Report  for zipcode ${report.zipcode}|"></h2>
 					<p>
