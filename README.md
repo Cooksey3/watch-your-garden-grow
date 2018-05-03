@@ -1,3 +1,1 @@
-# WAtch Your Garden Grow Biggly
-
-YUGELY.
+# Watch Your Garden Grow
