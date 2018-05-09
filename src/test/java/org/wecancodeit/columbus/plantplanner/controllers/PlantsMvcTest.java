@@ -3,7 +3,6 @@ package org.wecancodeit.columbus.plantplanner.controllers;
 import static org.mockito.Mockito.when;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
-import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.view;
 
 import javax.annotation.Resource;
 
@@ -13,7 +12,6 @@ import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.test.web.servlet.MockMvc;
-import org.wecancodeit.columbus.plantplanner.controllers.PlantRestController;
 import org.wecancodeit.columbus.plantplanner.data.PlantRepository;
 import org.wecancodeit.columbus.plantplanner.data.ZipCodeLocalityRepository;
 import org.wecancodeit.columbus.plantplanner.data.ZoneRepository;

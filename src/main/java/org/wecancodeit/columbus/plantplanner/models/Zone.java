@@ -19,16 +19,16 @@ public class Zone {
 	@ManyToMany(mappedBy = "zones")
 	private Collection<Plant> plants;
 
+	public Collection<Plant> getPlants() {
+		return plants;
+	}
+
 	public Long getId() {
 		return id;
 	}
 
 	public String getZoneName() {
 		return zone;
-	}
-
-	public Collection<Plant> getPlants() {
-		return plants;
 	}
 
 	public Zone() {

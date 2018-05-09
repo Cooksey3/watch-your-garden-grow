@@ -14,7 +14,6 @@ import org.junit.Test;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
-import org.wecancodeit.columbus.plantplanner.controllers.PlantRestController;
 import org.wecancodeit.columbus.plantplanner.controllers.PlantRestController.SomethingNotFoundException;
 import org.wecancodeit.columbus.plantplanner.data.PlantRepository;
 import org.wecancodeit.columbus.plantplanner.data.PrismZoneDataRepository;
@@ -24,8 +23,6 @@ import org.wecancodeit.columbus.plantplanner.models.Plant;
 import org.wecancodeit.columbus.plantplanner.models.PrismZoneData;
 import org.wecancodeit.columbus.plantplanner.models.ZipCodeLocality;
 import org.wecancodeit.columbus.plantplanner.models.Zone;
-
-
 
 public class PlantRestControllerTest {
 
